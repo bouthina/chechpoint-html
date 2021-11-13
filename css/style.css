@@ -1,0 +1,149 @@
+/* general */
+.clear {
+    clear: both;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* start header */
+/* header {
+    overflow: hidden;
+} */
+header{
+    background-color: rgba(165, 42, 42, 0.486);
+}
+header .logo {
+    float: left;
+}
+header nav {
+    float: right !important;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 10px;
+}
+header nav li a {
+    text-decoration: none;
+    font-family: 'Yuji Boku', serif;
+    color:black;
+}
+header nav li a:hover, header nav li a:focus{
+    color:white;
+}
+/* section merchant */
+section.merchant {
+    padding: 50px 0;
+}
+ /* section.merchant .image {
+    width: 50%;
+    display: inline-block;
+} */
+
+ section.merchant p{
+    /* width: 48%;
+    display: inline-block; */
+}
+section.merchant .content {
+    display: flex;
+    justify-content: space-around;
+}
+section.merchant .content p{
+    max-width: 50%;
+    padding: 40px 30px;
+    background-color: rgba(64, 224, 208, 0.335);
+    border:2px solid red ;
+    border-radius: 22px;
+}
+/* start section image-before */
+section.image-before {
+    position: relative;
+    min-height: 500px;
+    background-image: url(../res/R.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.image-before::before{
+    position: absolute;
+    content: "";
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+section.content-para {
+    padding: 80px 0;
+    text-align: center;
+}
+section.content-para h1 {
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+/* section.content-para h1 {
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: table;
+    margin: 0 auto 30px;
+} */
+/* section.content-para h1:after {
+    position: absolute;
+    content: "";
+    top: inherit;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 250px;
+    background: lightcoral;
+} */
+section.content-para h1:after {
+    position: absolute;
+    content: "";
+    top: inherit;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 250px;
+    background: lightcoral;
+}
+/* start section video */
+section.video, section.audio {
+    text-align: center;
+}
+/* footer */
+footer {
+    padding: 20px 0;
+    background: #dcdc84;
+    text-align: center;
+}
+footer .fa {
+    margin-right: 20px;
+}
+/* bootstrap */
+.bg-light {
+    background-color: #40434585 !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: red !important;
+}
+/* boot */
+.para{
+    padding: 30px;
+    background: lightcyan;
+    margin-bottom: 20px;
+}
+.para2{
+    background-color: red;
+}
+
